@@ -1,0 +1,60 @@
+/* Selector GLOBAL */
+
+/* * {
+    outline: 2px solid red;
+} */
+
+/* Selector POR ETIQUETA */
+h2 {
+    color: black;
+}
+
+/* Selector POR CLASE */
+/* . = class */
+.color-h3{
+    color: yellow;
+}
+
+/* Selector POR ID */
+#color-h4 {
+    color: wheat;
+}
+
+/* selector hijo directo */
+/* body > .color-hijo{
+    color: orange;
+} */
+
+/* Selector hermano en el MISMO NIVEL */
+h1 ~ h2 {
+    color: blueviolet;
+}
+
+/* Selector adyacente: como el hermano pero al más cercano*/
+h6 + p {
+    color: gold;
+}
+
+.hijo {
+    color:darksalmon;
+}
+
+.padre > .hijo {
+    color:brown;
+}
+
+.font-lg{
+    font-size: 40px;
+}
+
+.color-red{
+    color: red;
+}
+
+.color-hijo{
+    color: orange;
+}
+
+[id='atributo']{
+    color:salmon
+}

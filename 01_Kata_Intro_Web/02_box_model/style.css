@@ -1,0 +1,17 @@
+.box-1{
+    background-color: red;
+    padding: 20px 40px 60px 80px;
+    border: 3px solid black;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+}
+.box-2{
+    background-color: yellow;
+    padding: 20px 40px;
+}
+.box-3{
+    background-color: green;
+    padding: 20px 40px 40px 50px;
+}
