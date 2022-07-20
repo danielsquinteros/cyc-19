@@ -36,6 +36,7 @@ h6 + p {
 }
 
 .hijo {
+    font-size: 100px;
     color:darksalmon;
 }
 
@@ -57,4 +58,8 @@ h6 + p {
 
 [id='atributo']{
     color:salmon
+}
+
+.hijo{
+    font-size: 20px;
 }
