@@ -1,0 +1,121 @@
+/* px medida obsoluta */
+/* % medida relativa */
+
+.item {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(30, 92, 155);
+  color: #fff;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contenedor {
+  background-color: rgb(183, 183, 183);
+  padding: 4px;
+  display: flex;
+  min-height: 100px;  
+  /* direccion de ejes  x  y */
+
+  /* Establece la dirección del eje principal en horizontal. */
+  /* flex-direction: row; */
+
+  /* Establece la dirección del eje principal en horizontal (invertido).
+ */
+  /* flex-direction: row-reverse; */
+
+
+  /* Establece la dirección del eje principal en vertical. */
+  /* flex-direction: column; */
+
+
+  /* Establece la dirección del eje principal en vertical (invertido). */
+  /* flex-direction: column-reverse; */
+
+  /* 	Evita o permite el desbordamiento (multilinea). */
+  /* flex-wrap: wrap; */
+
+  /* propiedades de alineacion */
+  /* izquierda, centro, derecha, // calculo de espacio */
+
+  /* center es centrado */
+  /* justify-content: center; */
+
+  /* flex-start es hacia la izquierda  */
+  /* justify-content: flex-start; */
+
+  /* flex-end es hacia la derecha */
+  /* justify-content: flex-end; */
+
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  /* para poder acomodar items en el eje secundario o y necesitmos usar align-items con flex-wrap: wrap */
+  /* flex-wrap para crear un contenedor multilinea */
+  flex-wrap: wrap;
+  /* eje principal */  
+  /* justify-content: center; */
+  /* eje secundario */
+  /* align-items: center; */
+
+  /* Alinea los ítems al principio del eje secundario. */
+  /* align-items: flex-start; */
+
+  /* 	Alinea los ítems al final del eje secundario. */
+  /* align-items: flex-end; */
+
+  /* Alinea los ítems estirándolos de modo que cubran desde el inicio hasta el final del contenedor. */
+  /* tip si el contenedor hijo tiene una altura (heigt) no funciona */
+  /* align-items: stretch; */
+
+
+  /* HUECOS (GAPS) */
+  /* row-gap */
+  /* column-gap */
+  column-gap: 30px;
+  row-gap: 30px
+}
+
+/* PROPIEDADES QUE MODIFICAN A LOS HIJOS */
+/* flex-grow	 */
+/* agrandar el contenedor hijo por jerarquia */
+
+/* flex-shrink */
+/* Número que indica el factor de decrecimiento del ítem respecto al resto. */
+/* para que funcione */
+/* 
+  1 - el contenedor hijo debe tener un medida a lo ancho relativa
+  2. - todos los items deben tener la propiedad flex-shrink configurada
+*/
+
+/* order */
+/* Número (peso) que indica el orden de aparición de los ítems. */
+
+/* flex-basis */
+/* medidads relativas o absolutas */
+
+.item-1 {  
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* order: 2; */
+  flex-basis: 25%;
+}
+
+.item-2 {
+  /* flex-grow: 2; */
+  /* flex-shrink: 2; */
+  /* order: 1; */
+  flex-basis: 25%;
+
+}
+
+.item-3 {
+  /* flex-grow: 0; */
+  /* flex-shrink: 3; */
+  /* order: 0; */
+  flex-basis: 25%;
+}
+
+
